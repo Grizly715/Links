@@ -76,6 +76,7 @@ footer {
   animation-name: a1;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  display:none;
 }
 
 @keyframes a1{
