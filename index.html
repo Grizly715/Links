@@ -55,22 +55,33 @@
 
 	<main class="section">
 		<div class="container">
-			<nav class="nav">
-				<a class="nav-link" aria-current="page" data-f="all" href="#all">ALL</a>
-				<a class="nav-link" aria-current="page" data-f="code" href="#code">CODE</a>
-				<a class="nav-link" aria-current="page" data-f="graphics" href="#graphics">GRAPHICS</a>
-				<a class="nav-link" aria-current="page" data-f="fonts" href="#fonts">FONTS</a>
-				<a class="nav-link" aria-current="page" data-f="css" href="#css">CSS</a>
-				<a class="nav-link" aria-current="page" data-f="js" href="#js">jQuery/JS</a>
-				<a class="nav-link" aria-current="page" data-f="php" href="#php">PHP</a>
-				<a class="nav-link" aria-current="page" data-f="crib" href="#crib">CRIB</a>
-				<a class="nav-link" aria-current="page" data-f="hacks" href="#hacks">HACKS</a>
-				<a class="nav-link" aria-current="page" data-f="animations" href="#animations">ANIMATIONS</a>
-				<a class="nav-link" aria-current="page" data-f="other" href="#other">OTHER</a>
+			<nav class="nav justify-content-center nav-tabs" role="tablist">
+				<a class="nav-link" aria-current="page" id="all-tab" data-toggle="tab" data-target="#all" data-f="all"
+					href="#">ALL</a>
+				<a class="nav-link" aria-current="page" id="code-tab" data-toggle="tab" data-target="#code" data-f="code"
+					href="#">CODE</a>
+				<a class="nav-link" aria-current="page" id="graphics-tab" data-toggle="tab" data-target="#graphics"
+					data-f="graphics" href="#">GRAPHICS</a>
+				<a class="nav-link" aria-current="page" id="fonts-tab" data-toggle="tab" data-target="#fonts" data-f="fonts"
+					href="#">FONTS</a>
+				<a class="nav-link" aria-current="page" id="css-tab" data-toggle="tab" data-target="#css" data-f="css"
+					href="#">CSS</a>
+				<a class="nav-link" aria-current="page" id="js-tab" data-toggle="tab" data-target="#js" data-f="js"
+					href="#">jQuery/JS</a>
+				<a class="nav-link" aria-current="page" id="php-tab" data-toggle="tab" data-target="#php" data-f="php"
+					href="#">PHP</a>
+				<a class="nav-link" aria-current="page" id="crib-tab" data-toggle="tab" data-target="#crib" data-f="crib"
+					href="#">CRIB</a>
+				<a class="nav-link" aria-current="page" id="hacks-tab" data-toggle="tab" data-target="#hacks" data-f="hacks"
+					href="#">HACKS</a>
+				<a class="nav-link" aria-current="page" id="animations-tab" data-toggle="tab" data-target="#animations"
+					data-f="animations" href="#">ANIMATIONS</a>
+				<a class="nav-link" aria-current="page" id="other-tab" data-toggle="tab" data-target="#other" data-f="other"
+					href="#">OTHER</a>
 			</nav>
 			<div class="row row-cols-3">
 				<div class="col">
-					<div class="box code" id="code">
+					<div class="box code" id="code" role="tabpanel" aria-labelledby="code-tab">
 						<h3 class="section-title">Редакторы кода</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="https://code.visualstudio.com/">VS Code</a> – мощный редактор (IDE)
@@ -116,7 +127,7 @@
 								онлайн-инструмент для подбора межстрочного интервала, в зависимости от размера шрифта.</li>
 						</ol>
 					</div>
-					<div class="box css" id="css">
+					<div class="box css" id="css" role="tabpanel" aria-labelledby="css-tab">
 						<h3 class="section-title">Генераторы CSS</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="https://css3gen.com/">CSS3gen</a> – CSS генератор кнопок,
@@ -142,7 +153,7 @@
 								альтернатива Normalize.css и Reset.css.</li>
 						</ol>
 					</div>
-					<div class="box hacks" id="hacks">
+					<div class="box hacks" id="hacks" role="tabpanel" aria-labelledby="hacks-tab">
 						<h3 class="section-title">Лайфхаки для верстальщика</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="http://howtocenterincss.com/">How To Center in CSS</a> –
@@ -256,7 +267,7 @@
 								даже с учетом соотношения сторон.</li>
 						</ol>
 					</div>
-					<div class="box php" id="php">
+					<div class="box php" id="php" role="tabpanel" aria-labelledby="php-tab">
 						<h3 class="section-title">PHP</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="http://mobiledetect.net/">Mobile Detect</a> –
@@ -269,7 +280,7 @@
 				</div>
 				<!-- /.col-lg-4 -->
 				<div class="col">
-					<div class="box fonts" id="fonts">
+					<div class="box fonts" id="fonts" role="tabpanel" aria-labelledby="fonts-tab">
 						<h3 class="section-title">Шрифты</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="http://fonts.google.com/">Google Fonts</a> – Веб-шрифты от Google
@@ -287,7 +298,7 @@
 								для программирования с предварительным просмотром.</li>
 						</ol>
 					</div>
-					<div class="box js" id="js">
+					<div class="box js" id="js" role="tabpanel" aria-labelledby="js-tab">
 						<h3 class="section-title">Полезные jQuery/JS плагины</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="http://kenwheeler.github.io/slick/">Slick</a> – Адаптивный слайдер
@@ -344,7 +355,7 @@
 								создания 3D эфектов на JS.</li>
 						</ol>
 					</div>
-					<div class="box crib" id="crib">
+					<div class="box crib" id="crib" role="tabpanel" aria-labelledby="crib-tab">
 						<h3 class="section-title">Шпаргалки</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="http://yoksel.github.io/flex-cheatsheet/">FlexBox</a> – шпаргалка
@@ -376,7 +387,7 @@
 				</div>
 				<!-- /.col-lg-4 -->
 				<div class="col">
-					<div class="box graphics" id="graphics">
+					<div class="box graphics" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">
 						<h3 class="section-title">Работа с изображениями</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="https://compressor.io/">Сompressor</a> – Сжимает JPG и PNG </li>
@@ -495,7 +506,7 @@
 								кастомизируются.</li>
 						</ol>
 					</div>
-					<div class="box other" id="other">
+					<div class="box other" id="other" role="tabpanel" aria-labelledby="other-tab">
 						<h3 class="section-title">Прочее</h3>
 						<ol class="unstyled-list">
 							<li><a target="_blank" href="https://coverr.co/">Coverr</a> – Короткие видео для фона на сайт
@@ -585,7 +596,8 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="./js/filter.js"></script>
 	<script src="./js/scroll-up.js"></script>
 
