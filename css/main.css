@@ -158,3 +158,10 @@ footer {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
+.unstyled-list li.hide{
+  display: none;
+}
+#elastic{
+  margin-bottom: 10px;
+}
